@@ -8,12 +8,11 @@ export default Index
 
 const axios = require('axios');
 const AWS = require('aws-sdk');
-
-// AWS SDK 구성
+// AWS configure
 AWS.config.update({
-    region: 'ap-northeast-2', // 여러분이 사용하는 S3 버킷의 리전
-    accessKeyId: 'AKIA4SB7Y6R4JGHGIGX3',
-    secretAccessKey: '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'
+    region: 'ap-northeast-2', // 사용하는 S3 버킷의 리전
+    accessKeyId: '*',
+    secretAccessKey: '*'
 });
 
 const s3 = new AWS.S3();
